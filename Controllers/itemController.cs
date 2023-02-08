@@ -27,7 +27,7 @@ namespace שיעור_2.Controllers
             var t = ItemService.Get(id);
             if (t == null)
                 return NotFound();
-             return t;
+             return t
         }
 
         [HttpPost]
