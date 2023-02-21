@@ -31,3 +31,36 @@ C:\Users\win10\Documents\לימודים\סמסטר ב\core\שיעור 2\obj\Debu
 C:\Users\win10\Documents\לימודים\סמסטר ב\core\שיעור 2\obj\Debug\net7.0\שיעור 2.pdb
 C:\Users\win10\Documents\לימודים\סמסטר ב\core\שיעור 2\obj\Debug\net7.0\שיעור 2.genruntimeconfig.cache
 C:\Users\win10\Documents\לימודים\סמסטר ב\core\שיעור 2\obj\Debug\net7.0\ref\שיעור 2.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.csproj.AssemblyReference.cache
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.AssemblyInfoInputs.cache
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.AssemblyInfo.cs
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.csproj.CoreCompileInputs.cache
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\refint\שיעור 2.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.pdb
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\appsettings.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\שיעור 2.exe
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\שיעור 2.deps.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\שיעור 2.runtimeconfig.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\שיעור 2.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\שיעור 2.pdb
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\staticwebassets\msbuild.שיעור 2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\staticwebassets\msbuild.build.שיעור 2.props
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.שיעור 2.props
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.שיעור 2.props
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\scopedcss\bundle\שיעור 2.styles.css
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.csproj.CopyComplete
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.genruntimeconfig.cache
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\ref\שיעור 2.dll

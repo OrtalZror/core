@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EBpc9PN4681Hrqgg/L7LeG4GWhMIjW4Ks/KH+TYclmgmK2Vs4Jh1iVSZpQeTA02kT2pI1ZoAUVCHuO6N5k6mhw==",
+  "dgSpecHash": "4Vh52OMhRqIJ9h3a+1kIxMKcDqGF15lfrcvxngUWj7t3SBuGwqOmBXLbct3t6okZuChx/4CmcgTUmG4UKY9EXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\שיעור 2\\שיעור 2.csproj",
+  "projectFilePath": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\git\\שיעור 2\\שיעור 2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

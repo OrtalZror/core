@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\שיעור 2\\שיעור 2.csproj": {}
+    "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\git\\שיעור 2\\שיעור 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\שיעור 2\\שיעור 2.csproj": {
+    "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\git\\שיעור 2\\שיעור 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\שיעור 2\\שיעור 2.csproj",
+        "projectUniqueName": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\git\\שיעור 2\\שיעור 2.csproj",
         "projectName": "שיעור 2",
-        "projectPath": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\שיעור 2\\שיעור 2.csproj",
+        "projectPath": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\git\\שיעור 2\\שיעור 2.csproj",
         "packagesPath": "C:\\Users\\win10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\שיעור 2\\obj\\",
+        "outputPath": "C:\\Users\\win10\\Documents\\לימודים\\סמסטר ב\\core\\git\\שיעור 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
