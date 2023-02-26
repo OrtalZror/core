@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+// using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
-using  שיעור_2.Models;
+using Task = שיעור_2.Models.Task;
 
 namespace שיעור_2.Controllers
 {
@@ -13,35 +12,35 @@ namespace שיעור_2.Controllers
 
     [ApiController]
     [Route("[controller]")]
-    public class ItemController : ControllerBase
+    public class TaskController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<Item> Get()
+        public IEnumerable<Task> Get()
         {
-            return ItemService.GetAll();
+            return TaskService.GetAll();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Item> Get(int id)
+        public ActionResult<Task> Get(int id)
         {
-            var t = ItemService.Get(id);
+            var t = TaskService.Get(id);
             if (t == null)
                 return NotFound();
              return t;
         }
 
         [HttpPost]
-        public ActionResult Post(Item item)
+        public ActionResult Post(Task task)
         {
-            ItemService.Add(item);
+            TaskService.Add(task);
 
-            return CreatedAtAction(nameof(Post), new { id = item.Id }, item);
+            return CreatedAtAction(nameof(Post), new { id = task.Id }, task);
         }
 
         [HttpPut("{id}")]
-        public ActionResult Put(int id, Item item)
+        public ActionResult Put(int id, Task task)
         {
-            if (!ItemService.Update(id, item))
+            if (!TaskService.Update(id, task))
                 return BadRequest();
             return NoContent();
         }
@@ -49,7 +48,7 @@ namespace שיעור_2.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete (int id)
         {
-            if (!ItemService.Delete(id))
+            if (!TaskService.Delete(id))
                 return NotFound();
             return NoContent();            
         }
