@@ -1,23 +1,25 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-// using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Task = שיעור_2.Models.Task;
+using  שיעור_2.Models;
+using  שיעור_2.Interfaces;
+using  שיעור_2.Services;
+namespace שיעור_2.Controllers;
 
-namespace שיעור_2.Controllers
-{
   
-
     [ApiController]
     [Route("[controller]")]
     public class TaskController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<Task> Get()
+        private TaskInterface TaskService;
+        public TaskController(TaskInterface task)
         {
-            return TaskService.GetAll();
+            this.TaskService=task;
+        }
+        [HttpGet]
+        public List<Task> Get()
+        {
+            return TaskService.Get();
         }
 
         [HttpGet("{id}")]
@@ -32,7 +34,7 @@ namespace שיעור_2.Controllers
         [HttpPost]
         public ActionResult Post(Task task)
         {
-            TaskService.Add(task);
+            TaskService.Post(task);
 
             return CreatedAtAction(nameof(Post), new { id = task.Id }, task);
         }
@@ -40,7 +42,7 @@ namespace שיעור_2.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id, Task task)
         {
-            if (!TaskService.Update(id, task))
+            if (!TaskService.Put(id, task))
                 return BadRequest();
             return NoContent();
         }
@@ -53,4 +55,3 @@ namespace שיעור_2.Controllers
             return NoContent();            
         }
          }
-}
