@@ -10,7 +10,6 @@ public static class Injection
     public static void AddTask(this IServiceCollection services)
     {
         services.AddSingleton<TaskInterface,TaskService>();
-        // services.AddSingleton<>();
     }
 }
 }

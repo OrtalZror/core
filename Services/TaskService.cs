@@ -3,19 +3,38 @@ using Task = שיעור_2.Models.Task;
 using  שיעור_2.Models;
 using   שיעור_2.Utilities;
 using  שיעור_2.Interfaces;
-
+using System.IO;
+using System.Text.Json;
 
 namespace שיעור_2.Services;
 
     public class TaskService:TaskInterface
     {
-        private  List<Task> tasks =new List<Task>
+         List<Task> tasks{ get; }=new List<Task>();
+      private IWebHostEnvironment  webHost;
+        private string filePath;
+        public TaskService(IWebHostEnvironment webHost)
         {
-            new Task{Id=1,Description="to do hw in Java",IsDone=false},
-            new Task{Id=2,Description="to bake a cake",IsDone=true},
-            new Task{Id=3,Description="to do shopping",IsDone=false},
-            new Task{Id=2,Description="to sleep",IsDone=false}
-        };
+            this.webHost = webHost;
+            this.filePath = Path.Combine(webHost.ContentRootPath, "data", "task.json");
+             using (var jsonFile = File.OpenText(this.filePath))
+            {
+                List<Task>?temp = JsonSerializer.Deserialize<List<Task>>(jsonFile.ReadToEnd(),
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                if(temp!=null)
+                {
+                    this.tasks=temp;
+                }
+            }
+        }
+        private void saveList(List<Task>list)
+        {
+            File.WriteAllText(filePath, JsonSerializer.Serialize(tasks));
+        }
+        
        public  List<Task> Get()
        {
         return tasks;
@@ -30,6 +49,7 @@ namespace שיעור_2.Services;
         {
             task.Id = tasks.Max(t => t.Id) + 1;
             tasks.Add(task);
+            saveList(tasks);
             return task;
         }
 
@@ -39,9 +59,14 @@ namespace שיעור_2.Services;
                 return false;
             
             var task = tasks.FirstOrDefault(p => p.Id == id);
+           if(task!=null)
+           {
             task.Description = newTask.Description;
             task.IsDone = newTask.IsDone;
+            saveList(tasks);
             return true;
+            }
+            return false;
         }
 
         public  bool Delete(int id)
@@ -50,6 +75,7 @@ namespace שיעור_2.Services;
             if (task == null)
                 return false;
             tasks.Remove(task);
+            saveList(tasks);
             return true;
         }
 

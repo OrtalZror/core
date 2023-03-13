@@ -64,3 +64,5 @@ C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\
 C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.csproj.CopyComplete
 C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\שיעור 2.genruntimeconfig.cache
 C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\obj\Debug\net7.0\ref\שיעור 2.dll
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\שיעור 2.staticwebassets.runtime.json
+C:\Users\win10\Documents\לימודים\סמסטר ב\core\git\שיעור 2\bin\Debug\net7.0\Data\task.json
