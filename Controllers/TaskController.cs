@@ -4,6 +4,8 @@ using Task = שיעור_2.Models.Task;
 using  שיעור_2.Models;
 using  שיעור_2.Interfaces;
 using  שיעור_2.Services;
+using Microsoft.AspNetCore.Authorization;
+
 namespace שיעור_2.Controllers;
 
   
@@ -16,22 +18,27 @@ namespace שיעור_2.Controllers;
         {
             this.TaskService=task;
         }
+       
         [HttpGet]
+        // [Authorize(Policy="Admin")]
         public List<Task> Get()
         {
             return TaskService.Get();
         }
-
-        [HttpGet("{id}")]
-        public ActionResult<Task> Get(int id)
+        [Route("GetUser")]
+        [HttpGet]
+        //   [Authorize(Policy="User")]
+        public ActionResult <List<Task>> GetUser()
         {
-            var t = TaskService.Get(id);
-            if (t == null)
+           string token=HttpContext.Request.Headers["Aouthorize"];
+           var task=TaskService.Get(token);
+            if (task == null)
                 return NotFound();
-             return t;
+             return task;
         }
-
+        
         [HttpPost]
+         [Authorize(Policy="User")]
         public ActionResult Post(Task task)
         {
             TaskService.Post(task);
@@ -40,7 +47,8 @@ namespace שיעור_2.Controllers;
         }
 
         [HttpPut("{id}")]
-        public ActionResult Put(int id, Task task)
+        // [Authorize(Policy="User")]
+        public ActionResult Put(string id, Task task)
         {
             if (!TaskService.Put(id, task))
                 return BadRequest();
@@ -48,7 +56,8 @@ namespace שיעור_2.Controllers;
         }
 
         [HttpDelete("{id}")]
-        public ActionResult Delete (int id)
+        // [Authorize(Policy="User")]
+        public ActionResult Delete (string id)
         {
             if (!TaskService.Delete(id))
                 return NotFound();

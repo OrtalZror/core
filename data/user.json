@@ -1,0 +1,7 @@
+[
+    {"Id":"1","Username":"ortal","Kind":"Admin","Password":"111"},
+    {"Id":"2","Username":"tami","Kind":"User","Password":"111"},
+    {"Id":"3","Username":"rachel","Kind":"User","Password":"111"},
+    {"Id":"4","Username":"tami","Kind":"User","Password":"111"},
+    {"Id":"5","Username":"michal","Kind":"User","Password":"111"}
+]

@@ -11,5 +11,9 @@ public static class Injection
     {
         services.AddSingleton<TaskInterface,TaskService>();
     }
+       public static void AddUser(this IServiceCollection services)
+    {
+        services.AddSingleton<UserInterface,UserService>();
+    }
 }
 }

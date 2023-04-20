@@ -5,13 +5,19 @@ using   שיעור_2.Utilities;
 using  שיעור_2.Interfaces;
 using System.IO;
 using System.Text.Json;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace שיעור_2.Services;
-
+  
     public class TaskService:TaskInterface
-    {
+    { 
+    
+
          List<Task> tasks{ get; }=new List<Task>();
-      private IWebHostEnvironment  webHost;
+ 
+
+    private IWebHostEnvironment  webHost;
         private string filePath;
         public TaskService(IWebHostEnvironment webHost)
         {
@@ -30,6 +36,7 @@ namespace שיעור_2.Services;
                 }
             }
         }
+         static string idToken;
         private void saveList(List<Task>list)
         {
             File.WriteAllText(filePath, JsonSerializer.Serialize(tasks));
@@ -39,21 +46,23 @@ namespace שיעור_2.Services;
        {
         return tasks;
        }
-        public  Task Get(int id)
-        {
-          Task task=tasks.FirstOrDefault(t => t.Id == id);
-             return task;
-        }
-
+       public List<Task>Get(string token)
+       {
+        string id=TokenService.DecodeToken(token);
+        List<Task>tasksFilter=tasks.Where(t=>t.userId==id).ToList();
+        return tasksFilter;
+       }
+       
         public Task Post(Task task)
         {
             task.Id = tasks.Max(t => t.Id) + 1;
             tasks.Add(task);
             saveList(tasks);
             return task;
+            
         }
 
-        public  bool Put(int id, Task newTask)
+        public  bool Put(string id, Task newTask)
         {
             if (newTask.Id != id)
                 return false;
@@ -69,7 +78,7 @@ namespace שיעור_2.Services;
             return false;
         }
 
-        public  bool Delete(int id)
+        public  bool Delete(string id)
         {
             var task = tasks.FirstOrDefault(t => t.Id == id);
             if (task == null)
@@ -78,5 +87,8 @@ namespace שיעור_2.Services;
             saveList(tasks);
             return true;
         }
+
+    
+
 
 }

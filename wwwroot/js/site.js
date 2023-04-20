@@ -43,18 +43,19 @@ function deleteItem(id) {
 function displayEditForm(id) {
     const item = tasks.find(item => item.id === id);
 
-    document.getElementById('edit-description').value = item.Description;
-    document.getElementById('edit-id').value = item.Id;
-    document.getElementById('edit-isDone').checked = item.IsDone;
+    document.getElementById('edit-id').value = item.id;
+    document.getElementById('edit-description').value = item.description;
+
+    document.getElementById('edit-isDone').checked = item.isDone;
     document.getElementById('editForm').style.display = 'block';
 }
 
 function updateItem() {
     const itemId = document.getElementById('edit-id').value;
     const item = {
-        Id: parseInt(itemId, 10),
+        id: parseInt(itemId, 10),
         isDone: document.getElementById('edit-isDone').checked,
-        Description: document.getElementById('edit-description').value.trim()
+        description: document.getElementById('edit-description').value.trim()
     };
 
     fetch(`${uri}/${itemId}`, {
@@ -111,7 +112,7 @@ function _displayItems(data) {
         td1.appendChild(isDoneCheckbox);
 
         let td2 = tr.insertCell(1);
-        let textNode = document.createTextNode(item.name);
+        let textNode = document.createTextNode(item.description);
         td2.appendChild(textNode);
 
         let td3 = tr.insertCell(2);

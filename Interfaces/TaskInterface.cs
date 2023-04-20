@@ -9,9 +9,9 @@ namespace שיעור_2.Interfaces;
       public interface TaskInterface
       {
         public List<Task> Get();
-         public Task Get(int id);
+         public List<Task> Get(string token);
          public Task Post(Task task);
-          public bool Put(int id, Task task);
-           public bool Delete (int id);
+          public bool Put(string id, Task task);
+           public bool Delete (string id);
       
 }
